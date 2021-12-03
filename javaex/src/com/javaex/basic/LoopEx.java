@@ -15,6 +15,10 @@ public class LoopEx {
 		diceEx();
 	}
 	
+	private static void GuguEx3() {
+		
+	}
+	
 	private static void diceEx() {
 		// 주사위 10번 굴리기
 		for (int i =0; i < 10; i++) {
