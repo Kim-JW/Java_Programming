@@ -7,7 +7,7 @@ public class StaticEx {
 	
 	// static 블록으로 static 영역의 초기화
 	static {
-		refCount = 0;
+		refCount =0;
 		classVar = "Static Member";
 //		instanceVar = "Instance Member";
 		// 중요: static 영역에서는 static만 접근 가능
@@ -22,5 +22,13 @@ public class StaticEx {
 		refCount++;
 		System.out.println("인스턴스 갯수: " + refCount);
 		System.out.println("생성자 호출: 인스턴스 생성");
+	}
+	
+	// 소멸자, Java에서는 비추. 
+	@Override
+	protected void finalize() throws Throwable {
+		refCount--;
+		System.out.println("소멸자 호출");
+		super.finalize();
 	}
 }
