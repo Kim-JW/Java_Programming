@@ -13,8 +13,10 @@ public class LangClassTest {
 		System.out.println("p == p2 ? " + (p == p2));
 		System.out.println("ggg" + p.equals(p2));
 		
-		p.setX(100);
-		p.setY(200);
+//		p.setX(100);
+//		p.setY(200);
+		
+		p2.setX(100);
 		
 		System.out.println("p = " + p);
 		System.out.println("p2 = " + p2);
