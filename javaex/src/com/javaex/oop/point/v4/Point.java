@@ -5,6 +5,8 @@ public class Point {
 //	private int x;
 //	private int y;
 	
+	public int num2 =0;
+	
 	protected int x;
 	protected int y;
 	

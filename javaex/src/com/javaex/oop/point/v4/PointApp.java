@@ -25,6 +25,8 @@ public class PointApp {
 		
 		Point cp2 = new ColorPoint(30, 40, "Green");
 		cp2.draw(true);
+		cp2.draw(true);
+		
 	}
 
 }

@@ -3,11 +3,16 @@ package com.javaex.oop.point.v4;
 // 상속 & override
 public class ColorPoint extends Point{
 	private String color;
+	public int num = 0;
 	
 	// 생성자
 	public ColorPoint(int x, int y, String color) {
 		super(x, y);
 		this.color = color;
+	}
+	
+	public int getNum() {
+		return num;
 	}
 	
 	@Override // 컴파일러에게 이 메서드가 오버라이딩한 메서드인지를 확인
@@ -24,5 +29,8 @@ public class ColorPoint extends Point{
 		
 		// 부모의 메서드를 호출하려면
 		// super.draw(bDraw);
+		
+		System.out.println("부모 변수");
+		System.out.println(num);
 	}
 }
